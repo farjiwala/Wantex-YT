@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#10141f">
+<title>Dayflow — Keep showing up</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="shell">
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">d</span><span>dayflow</span></a><span class="local-badge"><i></i> YOUR JOURNEY, YOUR PACE</span></header>
+<section class="hero"><div class="eyebrow">✳ &nbsp;SMALL STEPS. REAL CHANGE.</div><h1>Become who you<br><span>said you'd be.</span></h1><p class="intro">One day at a time. Pick a goal, show up today, and let consistency do its thing.</p></section>
+<section class="panel" id="setup-panel"><div class="section-head"><div><div class="step-label">YOUR COMMITMENT</div><h2>Choose your goal</h2></div><span class="step-number">01 / 02</span></div>
+<div class="presets"><button class="preset" data-days="7"><strong>7</strong><span>days</span></button><button class="preset" data-days="30"><strong>30</strong><span>days</span></button><button class="preset" data-days="60"><strong>60</strong><span>days</span></button><button class="preset selected" data-days="90"><strong>90</strong><span>days</span></button><button class="preset" data-days="180"><strong>180</strong><span>days</span></button><button class="preset" data-days="365"><strong>365</strong><span>days</span></button></div>
+<label class="custom-label" for="custom-days">Or set a custom duration</label><div class="custom-row"><input id="custom-days" type="number" min="1" max="36500" placeholder="Enter number of days" inputmode="numeric"><span class="days-suffix">DAYS</span></div>
+<button class="primary" id="start-btn">Start my journey <span>↗</span></button><p class="privacy-note">⌁ &nbsp;Your progress is saved on this device automatically.</p></section>
+<section class="panel tracker hidden" id="tracker-panel"><div class="section-head"><div><div class="step-label">YOUR JOURNEY IS LIVE</div><h2>Keep showing up.</h2></div><button class="text-button" id="edit-goal">Edit goal</button></div>
+<div class="tracker-card"><div class="tracker-top"><span class="live-pill"><i></i> IN PROGRESS</span><span id="goal-duration">90 DAY GOAL</span></div><div class="day-display"><span class="day-word">DAY</span><strong id="day-number">1</strong></div><p class="day-caption" id="day-caption"></p><div class="progress-meta"><span>YOUR PROGRESS</span><strong id="progress-label">1%</strong></div><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div><div class="date-meta"><span id="start-date"></span><span id="end-date"></span></div></div>
+<button class="primary" id="reset-btn">Start a new journey <span>↗</span></button><p class="privacy-note">⌁ &nbsp;Your day updates automatically using your start date.</p></section>
+<footer><span>DAYFLOW © <span id="year"></span></span><span>PROGRESS OVER PERFECTION.</span></footer></main><div class="toast" id="toast" role="status"></div><script src="app.js"></script></body></html>
